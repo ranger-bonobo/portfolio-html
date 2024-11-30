@@ -15,12 +15,13 @@
         <ul class="nav-list">
           <li class="nav-item"><a href="#about">About</a></li>
           <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
           <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="banner">
+    <section id="banner" class="fade-in">
       <h1>Hi, I am Ben</h1>
       <h1>Programmer, Innovator, Critical Thinker</h1>
     </section>
@@ -36,7 +37,7 @@
       </p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="fade-in">
       <h2>Projects</h2>
       <div class="projects">
         <div class="album-container">
@@ -75,13 +76,21 @@
       </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="fade-in">
       <h2>Skills</h2>
       <div class="skills-list-container">
         <div class="skills-list">
           <h3>Programming Languages</h3>
           <div class="skills-item">
-            <label>HTML & CSS</label>
+            <label>HTML</label>
+            <div class="meter-container">
+              <meter value="95" min="0" max="100">95%</meter>
+              <span class="circle" data-value="95"></span>
+            </div>
+          </div>
+
+          <div class="skills-item">
+            <label>CSS</label>
             <div class="meter-container">
               <meter value="95" min="0" max="100">95%</meter>
               <span class="circle" data-value="95"></span>
@@ -95,6 +104,7 @@
               <span class="circle" data-value="95"></span>
             </div>
           </div>
+
           <div class="skills-item">
             <label>Python</label>
             <div class="meter-container">
@@ -126,32 +136,61 @@
         </div>
 
         <div class="skills-list">
-          <h3>Programming Languages</h3>
-          <p class="skills-item">HTML</p>
-          <p class="skills-item">CSS</p>
-          <p class="skills-item">JavaScript</p>
-          <p class="skills-item">Python</p>
-        </div>
+          <h3>Frameworks</h3>
+          <div class="skills-item">
+            <label>Vue.js</label>
+            <div class="meter-container">
+              <meter value="95" min="0" max="100">95%</meter>
+              <span class="circle" data-value="95"></span>
+            </div>
+          </div>
 
-        <div class="skills-list">
-          <h3>Programming Languages</h3>
-          <p class="skills-item">HTML</p>
-          <p class="skills-item">CSS</p>
-          <p class="skills-item">JavaScript</p>
-          <p class="skills-item">Python</p>
+          <div class="skills-item">
+            <label>Node.js</label>
+            <div class="meter-container">
+              <meter value="95" min="0" max="100">95%</meter>
+              <span class="circle" data-value="95"></span>
+            </div>
+          </div>
+          <div class="skills-item">
+            <label>React.js</label>
+            <div class="meter-container">
+              <meter value="80" min="0" max="100">80%</meter>
+              <span class="circle" data-value="80"></span>
+            </div>
+          </div>
+          <div class="skills-item">
+            <label>TensorFlow</label>
+            <div class="meter-container">
+              <meter value="80" min="0" max="100">80%</meter>
+              <span class="circle" data-value="80"></span>
+            </div>
+          </div>
         </div>
-
         <div class="skills-list">
-          <h3>Programming Languages</h3>
-          <p class="skills-item">HTML</p>
-          <p class="skills-item">CSS</p>
-          <p class="skills-item">JavaScript</p>
-          <p class="skills-item">Python</p>
+          <h3>Others</h3>
+          <div class="skills-item others">
+            <p class="skills-title others">Database</p>
+            <label>MySQL</label>
+            <div class="meter-container">
+              <meter value="80" min="0" max="100">80%</meter>
+              <span class="circle" data-value="80"></span>
+            </div>
+          </div>
+
+          <div class="skills-item others">
+            <p class="skills-title others">Version Control</p>
+            <label>Git</label>
+            <div class="meter-container">
+              <meter value="80" min="0" max="100">80%</meter>
+              <span class="circle" data-value="80"></span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="fade-in">
       <h2>Contact</h2>
       <p>Email: nghoting88@gmail.com</p>
       <p>Tel: 66817107</p>
@@ -171,4 +210,5 @@
   </body>
   <script src="scripts/nav-toggle.js"></script>
   <script src="scripts/skills-meter.js"></script>
+  <script src="scripts/scroll-animations.js"></script>
 </html>

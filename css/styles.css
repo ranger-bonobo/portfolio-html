@@ -98,6 +98,18 @@ nav ul li a:hover {
   border-bottom: none;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Add the animation class */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 section {
   padding: 2rem;
   background: #fff;
@@ -147,7 +159,7 @@ section p {
 .album-container {
   padding: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
 }
 
 .album-item {
@@ -184,7 +196,7 @@ section p {
   width: 100%;
   padding: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 2rem;
 }
 
@@ -193,11 +205,11 @@ section p {
   margin: 1rem;
   border: 1px solid #b8b8b8;
   border-radius: 30px;
-  padding: 2rem;
+  padding: 2rem 4rem 2rem 4rem;
 }
 
 .skills-list h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -205,8 +217,32 @@ section p {
 .skills-item {
   text-align: right;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.8fr;
   gap: 1rem;
+}
+
+.skills-item.others {
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "skills-title skills-title" "label meter";
+  gap: 0.25rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.skills-title.others {
+  grid-area: skills-title;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.skills-item.others label {
+  grid-area: label;
+}
+
+.skills-item.others meter {
+  grid-area: meter;
 }
 
 .skills-item label {
@@ -243,6 +279,20 @@ section p {
   border-radius: 50%;
   border: 5px solid #555555;
   background-color: white;
+}
+
+#contact p {
+  font-size: 1.8rem;
+  margin: 1.5rem 0 0 0;
+}
+
+#contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
 
 footer {
