@@ -191,9 +191,58 @@ section p {
 .skills-list {
   flex: 0 0 auto;
   margin: 1rem;
-  text-align: center;
   border: 1px solid #b8b8b8;
   border-radius: 30px;
+  padding: 2rem;
+}
+
+.skills-list h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skills-item {
+  text-align: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.skills-item label {
+  font-size: 1.6rem;
+}
+
+.meter-container {
+  position: relative;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.meter-container meter {
+  width: 100%;
+  height: 2rem;
+}
+
+.meter-container meter::-webkit-meter-optimum-value {
+  background: #f28f68;
+}
+
+/* For Firefox */
+.meter-container meter::-moz-meter-bar {
+  background: #f28f68;
+}
+
+.meter-container .circle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 5px solid #555555;
+  background-color: white;
 }
 
 footer {
