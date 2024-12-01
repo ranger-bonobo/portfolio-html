@@ -21,10 +21,10 @@ body {
   align-items: center;
 }
 
-.header {
+header {
   background: #333;
   color: #fff;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.8rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -122,7 +122,7 @@ section {
 
 #banner {
   background-image: url("../images/background1.jpg");
-  height: 30rem;
+  height: 35rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -152,14 +152,12 @@ section p {
   font-size: 1.5rem;
 }
 
-.projects {
-  margin-bottom: 1.5rem;
-}
-
 .album-container {
-  padding: 3rem;
+  width: 100%;
+  padding: 3rem 3rem 0 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 2rem;
 }
 
 .album-item {
@@ -176,15 +174,16 @@ section p {
   object-fit: cover;
   width: 100%;
   height: auto;
+  border-bottom: 1px solid #b8b8b8;
 }
 
 .album-item h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 0.5rem 0;
 }
 
 .album-item p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #666;
 }
 
@@ -302,6 +301,154 @@ footer {
   color: #fff;
   width: 100%;
   bottom: 0;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 4rem;
+  }
+
+  section h2 {
+    font-size: 2.8rem;
+  }
+
+  header {
+    padding: 1rem 2.2rem;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .nav-list {
+    position: static;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-list.active {
+    width: auto;
+    background-color: transparent;
+    flex-direction: row;
+  }
+
+  .nav-item {
+    margin: 0 2rem;
+    font-size: 2rem;
+  }
+
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #banner {
+    height: 40rem;
+  }
+
+  #banner h1 {
+    font-size: 3.5rem;
+  }
+
+  #about p {
+    font-size: 1.6rem;
+  }
+
+  .album-item h3 {
+    font-size: 1.9rem;
+  }
+
+  .album-item p {
+    font-size: 1.7rem;
+  }
+
+  #contact p {
+    font-size: 2rem;
+  }
+
+  footer {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  section {
+    padding: 5rem;
+  }
+
+  section h2 {
+    font-size: 3.1rem;
+  }
+
+  header {
+    padding: 1rem 2.4rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .nav-list {
+    position: static;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-list.active {
+    width: auto;
+    background-color: transparent;
+    flex-direction: row;
+  }
+
+  .nav-item {
+    margin: 0 2.2rem;
+    font-size: 2.2rem;
+  }
+
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #banner {
+    height: 45rem;
+  }
+
+  #banner h1 {
+    font-size: 3.8rem;
+  }
+
+  #about p {
+    font-size: 1.8rem;
+  }
+
+  .album-item h3 {
+    font-size: 2.1rem;
+  }
+
+  .album-item p {
+    font-size: 1.9rem;
+  }
+
+  #contact p {
+    font-size: 2.2rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
 }
 
 /* @media (min-width: 600px) {

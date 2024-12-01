@@ -46,15 +46,18 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetElement = document.getElementById(targetId);
 
       targetElement.scrollIntoView({ behavior: "smooth" });
-      navList.style.height = "0";
-      navList.addEventListener(
-        "transitionend",
-        function () {
-          navList.classList.remove("active");
-        },
-        { once: true }
-      );
-      navButton.classList.remove("cross");
+
+      if (window.innerWidth < 768) {
+        navList.style.height = "0";
+        navList.addEventListener(
+          "transitionend",
+          function () {
+            navList.classList.remove("active");
+          },
+          { once: true }
+        );
+        navButton.classList.remove("cross");
+      }
     });
   });
 });
